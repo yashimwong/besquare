@@ -1,15 +1,8 @@
-import SideBar from "components/side-bar";
 import type { NextPage } from "next";
-import NavigationBar from "../components/navigation-bar";
+import Layout from "components/layout";
 
 const Home: NextPage = () => {
-  return (
-    <>
-      <NavigationBar />
-      <SideBar />
-      <div className="flex mt-12 min-h-screen bg-gray-200">Contents</div>
-    </>
-  );
+  return <Layout>Test</Layout>;
 };
 
 export default Home;
