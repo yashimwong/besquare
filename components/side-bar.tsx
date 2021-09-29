@@ -35,6 +35,10 @@ const sidebar_items = [
     to: "/intro-to-web",
   },
   {
+    name: "How do Browsers work?",
+    to: "/browsers",
+  },
+  {
     name: "Setting up your IDE",
     to: "/ide-setup",
   },
@@ -49,6 +53,10 @@ const sidebar_items = [
   {
     name: "JavaScript",
     to: "/javascript",
+  },
+  {
+    name: "Browser APIs",
+    to: "/browser-api",
   },
   {
     name: "Drum App",
