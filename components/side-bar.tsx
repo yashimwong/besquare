@@ -51,7 +51,7 @@ const SideBar = ({ show }: SideBarProps) => {
   return (
     <Transition.Root show={show}>
       <Transition.Child enter="transform transition ease-in">
-        <div className="fixed flex flex-col items-center w-72 min-h-screen bg-gray-900 pt-4 px-4">
+        <div className="fixed flex flex-col items-center w-72 min-h-screen bg-gray-900 pt-4 px-4 z-50">
           {sidebar_items.map((item) => {
             return <SideBarItems key={item.name} {...item} />;
           })}

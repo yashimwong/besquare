@@ -2,6 +2,7 @@ import { ReactNode, useState } from "react";
 import Head from "next/head";
 import NavigationBar from "components/navigation-bar";
 import SideBar from "components/side-bar";
+import Footer from "components/footer";
 
 type LayoutProps = {
   children: ReactNode;
@@ -25,6 +26,7 @@ const Layout = ({ children, page_name }: LayoutProps) => {
             {children}
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );
