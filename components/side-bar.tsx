@@ -4,13 +4,14 @@ import { Transition } from "@headlessui/react";
 type SideBarItemsProps = {
   name: string;
   to: string;
+  index: number;
 };
 
-const SideBarItems = ({ name, to }: SideBarItemsProps) => {
+const SideBarItems = ({ index, name, to }: SideBarItemsProps) => {
   return (
     <Link href={to} passHref>
       <div className="cursor-pointer bg-gray-200 rounded-md w-full px-3 py-2 mb-3">
-        {name}
+        {`${index + 1} - ${name}`}
       </div>
     </Link>
   );
@@ -34,6 +35,10 @@ const sidebar_items = [
     to: "/intro-to-web",
   },
   {
+    name: "Setting up your IDE",
+    to: "/ide-setup",
+  },
+  {
     name: "HTML5",
     to: "/html",
   },
@@ -45,6 +50,10 @@ const sidebar_items = [
     name: "JavaScript",
     to: "/javascript",
   },
+  {
+    name: "Drum App",
+    to: "/drum-app",
+  },
 ];
 
 const SideBar = ({ show }: SideBarProps) => {
@@ -52,8 +61,8 @@ const SideBar = ({ show }: SideBarProps) => {
     <Transition.Root show={show}>
       <Transition.Child enter="transform transition ease-in">
         <div className="fixed flex flex-col items-center w-72 min-h-screen bg-gray-900 pt-4 px-4 z-50">
-          {sidebar_items.map((item) => {
-            return <SideBarItems key={item.name} {...item} />;
+          {sidebar_items.map((item, index) => {
+            return <SideBarItems key={item.name} index={index} {...item} />;
           })}
         </div>
       </Transition.Child>
