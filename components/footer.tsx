@@ -3,7 +3,7 @@ import { NextPage } from "next";
 
 const Footer: NextPage = () => {
   return (
-    <div className="fixed bottom-0 bg-white shadow w-full py-3 px-4 text-xs flex justify-end">
+    <div className="fixed bottom-0 bg-white shadow w-full py-3 px-4 text-xs flex justify-end z-0">
       <div className="">
         Crafted by
         <Link href="https://yashimwong.com" passHref>

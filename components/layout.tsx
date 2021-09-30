@@ -2,7 +2,9 @@ import { ReactNode, useState } from "react";
 import Head from "next/head";
 import NavigationBar from "components/navigation-bar";
 import SideBar from "components/side-bar";
+import SidebarToggle from "components/sidebar-toggle";
 import Footer from "components/footer";
+import classNames from "classnames";
 
 type LayoutProps = {
   children: ReactNode;
@@ -21,8 +23,16 @@ const Layout = ({ children, page_name }: LayoutProps) => {
       <div className="bg-gray-200">
         <NavigationBar />
         <SideBar show={show_sidebar} />
-        <div className="flex ml-72 mt-14 min-h-screen">
-          <div className="bg-white mt-6 mx-4 py-4 px-6 rounded-md shadow-md w-full h-full">
+        <div
+          className={classNames("flex flex-col mt-14 min-h-screen", {
+            "ml-72": show_sidebar,
+          })}
+        >
+          <SidebarToggle
+            is_sidebar_shown={show_sidebar}
+            handleClick={() => setShowSideBar(!show_sidebar)}
+          />
+          <div className="bg-white mx-4 py-4 px-6 rounded-md shadow-md h-full">
             {children}
           </div>
         </div>
