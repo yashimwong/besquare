@@ -1,43 +1,43 @@
+import { SectionContainer } from "components/container";
 import Layout from "components/layout";
+import { MainHeader, Header, TextBlock } from "components/typography";
 import { NextPage } from "next";
 
 const ProgrammingBasics: NextPage = () => {
   return (
     <Layout page_name="Programming Basics">
-      <h1 className="text-3xl uppercase font-bold mb-2">Programming Basics</h1>
+      <MainHeader>Programming Basics</MainHeader>
       <p>
         This section will be covering common questions of people who is new to
         the programming field.
       </p>
-      <section className="mt-4 mb-8">
-        <h2 className="text-2xl font-bold mb-2">
-          Question 1: What is Programming?
-        </h2>
-        <p className="mb-3">
+      <SectionContainer>
+        <Header>Question 1: What is Programming?</Header>
+        <TextBlock>
           Programming in a nutshell is simply the process of telling a computer
           what to do. We as programmers (developers, engineers, the naming can
           vary) tell the computer what to do using specific instructions.
           Computers are not really smart so these instructions must be very
           specific.
-        </p>
-        <p className="mb-3">
+        </TextBlock>
+        <TextBlock>
           Sadly, machines only understand binary. Binary for those of you who
           have an electric/electronic engineering background is simply switches
           that have two state which is on(1) or off(0). Without getting into too
           much details, we simply created a more natural language to communicate
           with machines who only talk in binary.
-        </p>
-        <p className="mb-3">
+        </TextBlock>
+        <TextBlock>
           There are many languages that we have created to talk to machines: C,
           C#, JavaScript, Perl, Python, PHP to name a few. There are differences
           in how these different languages work but we wont go into too much
           details to keep this introduction friendly.
-        </p>
-      </section>
-      <h2 className="text-2xl font-bold mb-2">
+        </TextBlock>
+      </SectionContainer>
+      <Header>
         Question 2: Do I need to learn all languages? How to be good at this
         field?
-      </h2>
+      </Header>
       <p className="mb-2">
         Absolutely not. To be good at this field what you need to do is the
         following:
