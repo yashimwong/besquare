@@ -24,7 +24,7 @@ const IDESetup: NextPage = () => {
         </TextBlock>
       </SectionContainer>
       <SectionContainer>
-        <Header>Visual Studio Code</Header>
+        <Header>Step 1: Installing Visual Studio Code</Header>
         <SubHeader>Ubuntu</SubHeader>
         <TextBlock>
           If you are using <strong>Ubuntu</strong>, simply download
@@ -41,6 +41,16 @@ const IDESetup: NextPage = () => {
           Go to your downloads and simply double click on the .deb file to begin
           your installation. It will show the software center window and simply
           enter your user password to proceed with the installation.
+        </TextBlock>
+      </SectionContainer>
+      <SectionContainer>
+        <Header>Step 2: Installing Essential Extension</Header>
+        <SubHeader>Prettier</SubHeader>
+        <TextBlock>
+          Just like the {`extension's`} name, this extension helps make your
+          code prettier by auto-formating. Once you install it, you can activate
+          the auto-formatting by going to the settings {`->`} search for format
+          and checking on the Format on Save and Format on Paste
         </TextBlock>
       </SectionContainer>
     </Layout>
