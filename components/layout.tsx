@@ -32,7 +32,7 @@ const Layout = ({ children, page_name }: LayoutProps) => {
             is_sidebar_shown={show_sidebar}
             handleClick={() => setShowSideBar(!show_sidebar)}
           />
-          <div className="bg-white mx-4 py-4 px-6 rounded-md shadow-md h-full">
+          <div className="bg-white mx-4 py-6 px-8 rounded-md shadow-md h-full">
             {children}
           </div>
         </div>

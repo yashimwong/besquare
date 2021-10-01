@@ -4,7 +4,7 @@ import Layout from "components/layout";
 const Home: NextPage = () => {
   return (
     <Layout page_name="Welcome">
-      <h1 className="text-2xl uppercase font-bold mb-2">Welcome!</h1>
+      <h1 className="text-3xl uppercase font-bold mb-2">Welcome!</h1>
       <p>
         Hey, there! Welcome to the Introduction to HTML, CSS and JavaScript
         course of the Besquare programme. Hope you are having fun up to this
