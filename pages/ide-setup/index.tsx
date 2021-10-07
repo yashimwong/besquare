@@ -45,12 +45,26 @@ const IDESetup: NextPage = () => {
       </SectionContainer>
       <SectionContainer>
         <Header>Step 2: Installing Essential Extension</Header>
+        <TextBlock>
+          To install extensions on vscode, click on the Extensions tab on the sidebar.
+          You can search for the extension you want and click install
+        </TextBlock>
         <SubHeader>Prettier</SubHeader>
         <TextBlock>
           Just like the {`extension's`} name, this extension helps make your
           code prettier by auto-formating. Once you install it, you can activate
           the auto-formatting by going to the settings {`->`} search for format
           and checking on the Format on Save and Format on Paste
+        </TextBlock>
+        <SubHeader>Live Server</SubHeader>
+        <TextBlock>
+          This extension helps you host your code on a local server and serves it to you through a localhost link.
+          This will be very useful when looking at the results of your code live on a browser.
+        </TextBlock>
+        <SubHeader>Live Share</SubHeader>
+        <TextBlock>
+          This extension allows you to share your screen on vscode where other people can watch you code live.
+          It will be useful for collaboration, and you will only know how awesome it is when you try it.
         </TextBlock>
       </SectionContainer>
     </Layout>
